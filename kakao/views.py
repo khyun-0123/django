@@ -8,7 +8,7 @@ def random(request):
         body = json.loads(request.body.decode('utf-8'))
         mymsg = body['userRequest']['utterance']
         response = '다시 말해줘'
-        if '쿠우쿠우' in mymsg or '준현' in mymsg:
+        if '교통' in mymsg or '사고' in mymsg:
             response = "성공"
 
         response_data = {
